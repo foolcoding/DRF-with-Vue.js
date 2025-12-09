@@ -1,0 +1,80 @@
+# ===============================
+# Python / Django 기본
+# ===============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*$py.class
+
+# 가상환경
+venv/
+.env/
+env/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ===============================
+# Django 관련
+# ===============================
+# Django migration 파일 중 __pycache__와 임시 파일
+*/migrations/__pycache__/
+*/migrations/*.pyc
+
+# DB(SQLite라면 제외)
+db.sqlite3
+db.sqlite3-journal
+
+# static & media (배포 시 collectstatic로 생성되므로 제외)
+staticfiles/
+static/
+media/
+
+# local settings
+settings_local.py
+local_settings.py
+
+# ===============================
+# IDE / Editor
+# ===============================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# ===============================
+# OS / 환경 파일
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Logs
+# ===============================
+*.log
+
+# ===============================
+# Byte-compiled / cache
+# ===============================
+*.mo
+*.pot
+*.log
+*.tmp
+
+# ===============================
+# pytest / cache
+# ===============================
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+
+# ===============================
+# 기타 제외해도 좋은 폴더
+# ===============================
+node_modules/
+dist/
+build/
